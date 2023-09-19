@@ -18,9 +18,13 @@ header nav a:hover {
     color: black; filter:drop-shadow(5px 5px 1px #999)
 }
 /* main */
-main {padding: 0 30px;}
+main {}
 /* main -> intro */
-main #intro {text-align: center; height: 100vh; background: #EEEDED; }
+main #intro {
+    height: 100vh; 
+    background: #222;
+    text-align: center;
+}
 main #intro h1 {
     padding-top:320px ;
     animation: moves 1s ease-in;
@@ -29,54 +33,84 @@ main #intro h1 {
     0%{transform: translateX(-1500px);}
     50%{transform: translateX(1000px);}
 }
-main #intro h1 img {}
-main #intro p {margin-top: 40px; font-size: 1.333em; font-weight: 600;}
+main #intro h1 img {filter:invert(100%)}
+main #intro p {
+    margin-top: 84px;
+    font-size: 2.233em;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -0.1rem;
+}
 /* main.end */
 /* main profile */
 main #profile h2 {font-weight: 600;}
 main #profile {
-    text-align: center;
     width: 100%;
     padding-bottom: 10px;
 }
-main #profile h1 {
-    font-size: 2.369em; font-weight: 700;
-    border-bottom: 2px solid black; padding:80px 0 30px 117px;
-    background-color: #F0DE36; text-align: left;
+main .main_s h1 span {
+    font-size: 5.369rem;
+    font-weight: 700; margin-right:100px;
+}
+main .main_s h1 {
+    font-size: 5.369rem;
+    font-weight: 700;
+    border-bottom: 10px solid black;
+    padding: 80px 50px;
+    background-color: #F0DE36;
+    letter-spacing: -0.15rem;
 }
 main #profile .contents {
     display: flex;
+    width: 1440px;
+    margin: 50px auto;
 }
 main #profile .left {
     display: flex; flex-flow: column nowrap;
+    width: 430px;
 }
 main #profile .left > p {margin: 50px;}
 main #profile .left p img {}
+main #profile .right {
+    width:calc(100% - 430px);
+}
 /* profile -> porfile */
 main #profile .left .profile {
-    width: 40%; margin-left: 100px;
+    
 }
 main #profile .left .profile p {}
 main #profile .left .profile p img {}
 main #profile .left .profile h2 {
-    padding: 30px 0; 
+    padding: 30px 0; font-size:46px;
 }
 main #profile .left .profile dl {
     display: flex; width: 330px; justify-content: space-between;
-    
+    flex-flow:row wrap;
 }
 main #profile .left .profile dl dt {
-    line-height: 30px;
+    line-height: 30px; width: 130px;
 }
-main #profile .left .profile dl dt dd {}
+main #profile .left .profile dl dd {
+    width:200px;line-height: 30px; 
+}
 /* profile -> 경력사항 */
 main #profile .right .career {}
 main #profile .right .career h2 {
     border-bottom: 1px solid black;
+    font-size:25px;
 }
-main #profile .right .career dl { display: flex; padding-top: 10px;}
-main #profile .right .career dl dt {margin-right: 30px; line-height: 30px; font-weight: 600;}
-main #profile .right .career dl dt dd {line-height: 30px;}
+main #profile .right .career dl { 
+    display: flex; padding-top: 10px;
+    flex-flow:row wrap; 
+}
+main #profile .right .career dl dt {
+    line-height: 40px; font-weight: 600;
+    width:300px; font-size:18px;
+}
+main #profile .right .career dl dd {
+    line-height: 40px; font-size:18px;
+    width:calc(100% - 300px);
+}
 /* profile -> 스킬 툴 */
 main #profile .right .skils {
     display: flex;
@@ -84,14 +118,16 @@ main #profile .right .skils {
 }
 main #profile .right h2{
     border-bottom: 1px solid black;
-    margin-top: 100px; padding-bottom: 30px;
+    margin-top: 50px; padding-bottom: 30px;
+    font-size:25px;
 }
 main #profile .right .skils ul {
-    margin-left: 30px; 
+    margin-right: 20px; 
 }
 main #profile .right .skils ul li {}
 main #profile .right .skils ul .percent {
     height: 20px; width: 60px; overflow: hidden;
+    display:none;
     border: 1px solid #999; border-radius: 10px;
     
 }
@@ -106,17 +142,13 @@ main #profile .right .skils ul .percent::after {
 main #profile .right .skils ul li img {}
 /* project === web */
 main #project {}
-main #project h1 {
-    background-color: #F0DE36;
-    font-size: 2.369em; font-weight: 700;
-    border-bottom: 2px solid black; padding:80px 0 30px 117px;
-}
 main #project .project_list{text-align: center;}
 /* project file */
 main #project .project_list .web_project{
-    width: 180vh; border: 1px solid black;
-    display: block; height: 600px;
-    border-radius: 20px; margin: 15px;
+    width: 1440px; background:#eee; 
+    display: block;
+    border-radius: 20px; margin: 50px auto;
+    padding:50px 0;
 }
 main #project .project_list .web_project{display: flex; }
 main #project .project_list .web_project .web_img{ 
@@ -131,13 +163,16 @@ main #project .project_list .web_project .web_info{
     justify-content: space-between; margin-left: 200px; height: 450px;
 }
 main #project .project_list .web_project .web_info h2{
-    padding-top: 50px; font-size: 1.333em; font-weight: 600;
+    padding-top: 50px; font-size: 6.333em; font-weight: 600;
 }
 main #project .project_list #web_project1 .web_info .web_txt{
     
 }
 main #project .project_list .web_project  .web_info .web_txt p{
-    font-size: 1.333em; display: flex; justify-content: space-between;
+    font-size: 1.433em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 main #project .project_list .web_project .web_info .web_txt p em{
     font-size: 1em; font-weight: 600; 
@@ -158,103 +193,110 @@ main #project .project_list a img {}
 /* project === web.end */
 main #design {}
 main #design .etc_design{}
-main #design .etc_design h1 {
-    background-color: #F0DE36;
-    font-size: 2.369em; font-weight: 700;
-    border-bottom: 2px solid black; padding:80px 0 30px 117px;
-}
 main #design .etc_design h2 {
-    font-size: 1.333em; margin: 30px 0; text-align: center;
-    font-weight: 600; width: 150px; background: yellow;
+    font-size: 2.633em;
+    margin: 30px 0;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding:10px 0;
+    background: #222; color:#F0DE36;
     
 }
-
 main #design .etc_design .sns_design{
     height: 100%; text-align: center; 
 }
-    main #design .etc_design .sns_design a{
-        width: 350px; border: 1px solid black;
-        display: inline-block; height: 350px;
-        border-radius: 20px; margin: 15px; white-space: nowrap;
-        filter: grayscale(100%);
-    }
-    main #design .etc_design .sns_design a img{
-        width: 100%; border-radius: 20px; filter: grayscale(100%);
-    }
-    main #design .etc_design .promotion_design{}
-    main #design .etc_design .cardnews_design{}
-    /* ETC DESIGN background */
-    main #design .etc_design .sns_design a:nth-child(1){
-        background: url(../image/manyo3.png);
-        background-size:cover;
-    }
-    main #design .etc_design .sns_design a:nth-child(2){
-        background: url(../image/menology.jpg);
-        background-size:cover;
-    }
-    main #design .etc_design .sns_design a:nth-child(3){
-        background: url(../image/sns_lip.jpg);
-        background-size:cover;
-    }
-    main #design .etc_design .sns_design a:nth-child(4){
-        background: url(../image/d_a.jpg);
-        background-size:cover;
-    }
-    main #design .etc_design .sns_design a:nth-child(5){
-        background: url(../image/book.jpg);
-        background-size:cover;
-    }
-    main #design .etc_design .sns_design a:nth-child(6){
-        background: url(../image/north_face.jpg);
-        background-size: cover;
-    }
-    main #design .etc_design .sns_design a:nth-child(7){
-    }
-    main #design .etc_design .sns_design a:nth-child(8){}
-    main #design .etc_design .sns_design a:hover{
-        transform: scale(1.18); filter: none; transition: all 0.5s;
-    }
-    /* main #design .etc_design .sns_design .sns_img img{
-        width: 540px; position: fixed; left: 50%; top: 50%;
-        transform: translate(-50% ,-50%);
-    } */
-    /* banner design */
-    main #design .etc_design .banner{
-        padding: 100px 0 50px 0;
-    }
-    main #design .etc_design .banner h2{}
-    main #design .etc_design .banner .bn_design{
-        text-align: center;
-    }
-    main #design .etc_design .banner .bn_design a{
-        width: 1000px; height: 370px; border: 1px solid black;
-        display: inline-block;
-        border-radius: 20px; margin: 15px; white-space: nowrap;
-        filter: grayscale(100%);
-    }
-    main #design .etc_design .banner .bn_design a:hover{
-        transform: scale(1.18); filter: none; transition: all 0.5s;
-    }
-    main #design .etc_design .banner .bn_design a:nth-child(1){
-        background: url(../image/toppogi.jpg) no-repeat;
-    }
-    main #design .etc_design .banner .bn_design a:nth-child(2){
-        background: url(../image/popeyes.jpg) no-repeat;
-        background-size: cover;
-    }
-    main #design .etc_design .banner .bn_design a:nth-child(3){}
-    main #design .etc_design .banner .bn_design a:nth-child(4){}
-    
+main #design .etc_design .sns_design a{
+    width: 350px;
+    display: inline-block; height: 350px;
+    border-radius: 20px; margin: 15px; white-space: nowrap;
+    filter: grayscale(100%);
+    transition: all 0.5s;
+    background-color:#eee;
+    background-size:100%;
+    background-position:center;
+}
+main #design .etc_design .sns_design a img{
+    width: 100%; border-radius: 20px; filter: grayscale(100%);
+}
+main #design .etc_design .promotion_design{}
+main #design .etc_design .cardnews_design{}
+/* ETC DESIGN background */
+main #design .etc_design .sns_design a:nth-child(1){
+    background-image: url(../image/manyo3.png);
+}
+main #design .etc_design .sns_design a:nth-child(2){
+    background-image: url(../image/menology.jpg);
+}
+main #design .etc_design .sns_design a:nth-child(3){
+    background-image: url(../image/sns_lip.jpg);
+}
+main #design .etc_design .sns_design a:nth-child(4){
+    background-image: url(../image/d_a.jpg);
+}
+main #design .etc_design .sns_design a:nth-child(5){
+    background-image: url(../image/book.jpg);
+}
+main #design .etc_design .sns_design a:nth-child(6){
+    background-image: url(../image/north_face.jpg);
+}
+main #design .etc_design .sns_design a:nth-child(7){
+}
+main #design .etc_design .sns_design a:nth-child(8){}
+main #design .etc_design .sns_design a:hover{
+    background-size:110%;
+    filter: none; 
+}
+/* main #design .etc_design .sns_design .sns_img img{
+    width: 540px; position: fixed; left: 50%; top: 50%;
+    transform: translate(-50% ,-50%);
+} */
+/* banner design */
+main #design .etc_design .banner{
+    padding: 100px 0 50px 0;
+}
+main #design .etc_design .banner h2{}
+main #design .etc_design .banner .bn_design{
+    text-align: center;
+    width:1440px; margin:0 auto;
+}
+main #design .etc_design .banner .bn_design a{
+    width: 48%; height: 260px;
+    display: inline-block;
+    border-radius: 20px; white-space: nowrap;
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    transition: all 0.5s;
+    background-color:#eee;
+}
+main #design .etc_design .banner .bn_design a:hover{
+    background-size: auto 110%; filter: none; 
+}
+main #design .etc_design .banner .bn_design a:nth-child(1){
+    background-image: url(../image/toppogi.jpg);
+}
+main #design .etc_design .banner .bn_design a:nth-child(2){
+    background-image: url(../image/popeyes.jpg);
+}
+main #design .etc_design .banner .bn_design a:nth-child(3){}
+main #design .etc_design .banner .bn_design a:nth-child(4){}
 
-    main #design .etc_design .cardnews_design {}
-    main #design .etc_design .cardnews_design h2 {}
-    main #design .etc_design .cardnews_design .cardnews {text-align: center;}
-    main #design .etc_design .cardnews_design a {text-align: center;}
-    main #design .etc_design .cardnews_design a:hover {filter: grayscale(150%);}
-    main #design .etc_design .cardnews_design a img {width: 450px;}
-    main #design .etc_design .cardnews_design span {
-        display: block; font-size: 1.333em; font-weight: 600;
-    }
+
+main #design .etc_design .cardnews_design {margin-bottom:200px;}
+main #design .etc_design .cardnews_design h2 {}
+main #design .etc_design .cardnews_design .cardnews {text-align: center;}
+main #design .etc_design .cardnews_design a {
+    text-align: center; display:inline-block;
+    background:#eee; width:300px; height:300px;
+}
+main #design .etc_design .cardnews_design a:hover {filter: grayscale(150%);}
+main #design .etc_design .cardnews_design a img {width: 100%;}
+main #design .etc_design .cardnews_design span {
+    display: block; font-size: 1.333em; font-weight: 600;
+}
 
     /* #design .swiper {}
 #design .swiper .swiper-wrapper {}
