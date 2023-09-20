@@ -224,24 +224,25 @@ main #design .etc_design .promotion_design{}
 main #design .etc_design .cardnews_design{}
 /* ETC DESIGN background */
 main #design .etc_design .sns_design a:nth-child(1){
-    background-image: url(../image/manyo3.png);
+    background-image: url(../image/design/de_1.jpg);
 }
 main #design .etc_design .sns_design a:nth-child(2){
-    background-image: url(../image/menology.jpg);
+    background-image: url(../image/design/de_2.jpg);
 }
 main #design .etc_design .sns_design a:nth-child(3){
-    background-image: url(../image/sns_lip.jpg);
+    background-image: url(../image/design/de_3.jpg);
 }
 main #design .etc_design .sns_design a:nth-child(4){
-    background-image: url(../image/d_a.jpg);
+    background-image: url(../image/design/de_4.jpg);
 }
 main #design .etc_design .sns_design a:nth-child(5){
-    background-image: url(../image/book.jpg);
+    background-image: url(../image/design/de_5.jpg);
 }
 main #design .etc_design .sns_design a:nth-child(6){
-    background-image: url(../image/north_face.jpg);
+    background-image: url(../image/design/de_6.jpg);
 }
 main #design .etc_design .sns_design a:nth-child(7){
+    background-image: url(../image/design/de_7.jpg);
 }
 main #design .etc_design .sns_design a:nth-child(8){}
 main #design .etc_design .sns_design a:hover{
@@ -276,10 +277,10 @@ main #design .etc_design .banner .bn_design a:hover{
     background-size: auto 110%; filter: none; 
 }
 main #design .etc_design .banner .bn_design a:nth-child(1){
-    background-image: url(../image/toppogi.jpg);
+    background-image: url(../image/design/de_9.jpg);
 }
 main #design .etc_design .banner .bn_design a:nth-child(2){
-    background-image: url(../image/popeyes.jpg);
+    background-image: url(../image/design/de_10.jpg);
 }
 main #design .etc_design .banner .bn_design a:nth-child(3){}
 main #design .etc_design .banner .bn_design a:nth-child(4){}

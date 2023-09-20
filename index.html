@@ -161,7 +161,7 @@
                         <div class="web_move">
                             <a href="#">와이어/프로토타입</a>
                             <a href="#">기획서</a>
-                            <a href="#">최종 프로젝트 결과</a>
+                            <a href="http://soyeon96bbak.pe.kr/project_popeyes/index.html">최종 프로젝트 결과</a>
                         </div>
                     </div>
                 </div>
@@ -218,11 +218,11 @@
                         <a href="#"></a>
                     </div>
                 </div>
-                <div class="promotion_design"></div>
+                <div class="detail_design"></div>
                 <div class="cardnews_design">
                     <h2>Card News</h2>
                     <div class="cardnews">
-                        <a href="https://www.figma.com/proto/UbkhjMD9D1gq66yaL7kNbF/Untitled?page-id=0%3A1&type=design&node-id=1-2&viewport=480%2C377%2C0.15&t=GOIPLJEA4yjzRRpe-1&scaling=min-zoom&mode=design"><img src="./image/voice1.jpg" alt=""></a>
+                        <a href="#"><img src="./image/voice1.jpg" alt=""></a>
                         <a href="#"></a>
                         <a href="#"></a>
                         <a href="#"></a>
@@ -268,11 +268,12 @@
             const popup_wrap = document.querySelector('#popup_wrap')
             const popup_wrap_img = document.querySelector('#popup_wrap img')
             const design_aa = document.querySelectorAll('#design a')
-
+            // img 누를때 
             popup_wrap.style.display='none'
             design_aa.forEach(function(t,i,a){
                 t.addEventListener('click',function(e){
                     e.preventDefault()
+                    
                     popup_wrap.style.display='block'
                     popup_wrap_img.src = `./image/design/de_${i+1}.jpg`
                 })
@@ -296,18 +297,6 @@
                 prevEl : '#marketing_slide .swiper-button-prev', // 이번 버튼 클래스명
             },
         });
-/*         const snsDesign = document.querySelectorAll('.sns_design a')
-        console.log(snsDesign)
-        for(let i of snsDesign){
-        i.addEventListener('click',function(){
-            i.style.display = 'block'
-            i.style.width = '100%'
-
-        })}
-        for(let i of snsDesign){
-        i.addEventListener('click',function(){
-            i.style.width = ''
-        })} */
     </script>
 </body>
 </html> 
