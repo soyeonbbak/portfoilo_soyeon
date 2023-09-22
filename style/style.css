@@ -282,9 +282,12 @@ main #design .etc_design .banner .bn_design a:nth-child(1){
 main #design .etc_design .banner .bn_design a:nth-child(2){
     background-image: url(../image/design/de_10.jpg);
 }
-main #design .etc_design .banner .bn_design a:nth-child(3){}
-main #design .etc_design .banner .bn_design a:nth-child(4){}
-
+main #design .etc_design .banner .bn_design a:nth-child(3){
+    background-image: url(../image/design/de_11.jpg);
+}
+main #design .etc_design .banner .bn_design a:nth-child(4){
+    background-image: url(../image/design/de_12.jpg);
+}
 
 main #design .etc_design .cardnews_design {margin-bottom:200px;}
 main #design .etc_design .cardnews_design h2 {}

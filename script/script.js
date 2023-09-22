@@ -1,4 +1,4 @@
-$('.sns_design:nth-child(1)').on('click',function(){
+/* $('.sns_design:nth-child(1)').on('click',function(){
     $('.sns_img').removeClass();
     $('.sns_img:nth-child(1)').show()
 })
@@ -14,4 +14,19 @@ console.log(snsDs, snsImg)
 //     for(let i of modal_sns){i.addEventListener('click', function(){
 //         i.classList.remove('active')
 //     })}
-// })
+// }) */
+
+// 준비중
+// const nope = document.querySelectorAll('.nonefile')
+// for(let i of nope){
+//     i.addEventListener('mouseover',function(){
+//         i.textContent='준비중'
+//         i.style.alignItems ='center'
+//     })
+// }
+// for(let i of nope){
+//     i.addEventListener('mouseout',function(){
+//         i.textContent.display='none'
+//         nope.style.display='block'
+//     })
+// }
