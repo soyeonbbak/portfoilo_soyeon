@@ -244,7 +244,9 @@ main #design .etc_design .sns_design a:nth-child(6){
 main #design .etc_design .sns_design a:nth-child(7){
     background-image: url(../image/design/de_7.jpg);
 }
-main #design .etc_design .sns_design a:nth-child(8){}
+main #design .etc_design .sns_design a:nth-child(8){
+    background-image: url(../image/design/de_8.jpg);
+}
 main #design .etc_design .sns_design a:hover{
     background-size:110%;
     filter: none; 
