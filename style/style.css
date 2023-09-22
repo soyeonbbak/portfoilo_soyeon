@@ -297,11 +297,15 @@ main #design .etc_design .cardnews_design .cardnews {text-align: center;}
 main #design .etc_design .cardnews_design a {
     text-align: center; display:inline-block;
     background:#eee; width:300px; height:300px;
+    filter: grayscale(150%);
 }
-main #design .etc_design .cardnews_design a:hover {filter: grayscale(150%);}
+main #design .etc_design .cardnews_design a:hover {
+    background-size: auto 110%; filter: none; 
+}
 main #design .etc_design .cardnews_design a img {width: 100%;}
 main #design .etc_design .cardnews_design span {
-    display: block; font-size: 1.333em; font-weight: 600;
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    background-color: #333; width: 100%; padding: 20px 0; color: #fff;
 }
 
     /* #design .swiper {}
