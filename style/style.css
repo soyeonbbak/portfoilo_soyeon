@@ -70,7 +70,7 @@ main #profile .left {
     width: 430px;
 }
 main #profile .left > p {margin: 50px;}
-main #profile .left p img {}
+main #profile .left p img {width: 300px; border-radius: 50%;}
 main #profile .right {
     width:calc(100% - 430px);
 }
@@ -296,18 +296,13 @@ main #design .etc_design .cardnews_design h2 {}
 main #design .etc_design .cardnews_design .cardnews {text-align: center;}
 main #design .etc_design .cardnews_design a {
     text-align: center; display:inline-block;
-    background:#eee; width:300px; height:300px;
-    filter: grayscale(150%);
+    background:#eee; width:300px; height:300px; filter: grayscale(150%);
+    transition: all 0.1;
 }
-main #design .etc_design .cardnews_design a:hover {
-    background-size: auto 110%; filter: none; 
-}
+main #design .etc_design .cardnews_design a:hover {filter:none;}
 main #design .etc_design .cardnews_design a img {width: 100%;}
-main #design .etc_design .cardnews_design span {
-    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
-    background-color: #333; width: 100%; padding: 20px 0; color: #fff;
-}
-
+main #design .etc_design .cardnews_design span {display: inline-block; font-size: 2em;}
+main #design .etc_design .cardnews_design .nonefile {}
     /* #design .swiper {}
 #design .swiper .swiper-wrapper {}
 #design .swiper .swiper-wrapper .wiper-slide {} */
