@@ -304,7 +304,7 @@ main #design .etc_design .cardnews_design .cardnews a:nth-child(3) {background-i
 main #design .etc_design .cardnews_design .cardnews a:nth-child(4) {background-image: url(../image/design/de_15.jpg);}
 main #design .etc_design .cardnews_design a:hover {filter:none;}
 main #design .etc_design .cardnews_design .cardnews a img {width: 100%;}
-main #design .etc_design .cardnews_design .cardnews span {display: inline-block; width: 50px;}
+main #design .etc_design .cardnews_design .cardnews span {display: inline-block; width: 50px; height:300px; border-right:2px solid #222;}
 main #design .etc_design .cardnews_design .nonefile {}
     /* #design .swiper {}
 #design .swiper .swiper-wrapper {}
